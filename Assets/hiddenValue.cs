@@ -367,6 +367,8 @@ public class hiddenValue : MonoBehaviour {
 					yield return null;
 					while (((int)(bomb.GetTime())) % 10 != timepress)
 						yield return "trycancel The button was not pressed due to a request to cancel.";
+					yield return "strike";
+					yield return "solve";
 					hinges["12345678".IndexOf(param[1])].OnInteract();
 					yield return new WaitForSeconds(0.1f);
 				}
